@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>El buen sabor</title>    
+    </head>
+
+    <body>
+
+          <!--Modal con formulario con validación Agregar Usuario-->
+          <div class="modal fade" id="ModalDatosPersonales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Datos Personales</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                      <div class="col">
+                        <label for="validationCustom02" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="validationCustom02" min="0" max="500000" placeholder="Ingrese un nombre" required>
+                      </div>
+                      <div class="col">
+                        <label for="validationCustom02" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="validationCustom02" min="0" max="500000" placeholder="Ingrese un apellido" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row g-3">
+                      <div class="col">
+                        <label for="validationCustom02" class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control" id="validationCustom02" min="0" max="500000" placeholder="Ingrese un número de teléfono" required>
+                      </div>
+                      <div class="col">
+                        <label for="validationCustom02" class="form-label">Email:</label>
+                        <input type="text" class="form-control" id="validationCustom02" min="0" max="500000" placeholder="Ingrese un email" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row g-3">
+                      <div class="col">
+                        <label for="inputPassword5" class="form-label">Contraseña</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" placeholder="Ingrese una contraseña" required>
+                      </div>
+                      <div class="col">
+                        <label for="validationCustom02" class="form-label">Fecha de nacimiento:</label>
+                        <input type="text" class="form-control" id="validationCustom02" min="0" max="500000" placeholder="Ingrese una fecha de nacimiento" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row g-3">
+                      <div class="col">
+                        <label for="validationCustom02" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="validationCustom02" min="0" max="500000" placeholder="Ingrese una dirección" required>
+                      </div>
+                      <div class="col">
+                        <label for="validationCustom01" class="form-label">Departamento:</label>
+                        <select class="form-select" id="validationCustom01" required>
+                          <option selected disabled value="">Seleccione un departamento</option>
+                          <option value="1">Capital</option>
+                          <option value="2">Guaymallén</option>
+                          <option value="3">Las Heras</option>
+                          <option value="4">Lavalle</option>
+                          <option value="5">Junín</option>
+                          <option value="6">La Paz</option>
+                          <option value="7">Maipú</option>
+                          <option value="8">Rivadavia</option>
+                          <option value="9">Santa Rosa</option>
+                          <option value="10">San Martín</option>
+                          <option value="11">Godoy Cruz</option>
+                          <option value="12">Luján de Cuyo</option>
+                          <option value="13">San Carlos</option>
+                          <option value="14">Tunuyán</option>
+                          <option value="15">Tupungato</option>
+                          <option value="16">General Alvear</option>
+                          <option value="17">Malargüe</option>
+                          <option value="18">San Rafael</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-warning">Volver</button>
+                      <button type="button" class="btn btn-warning">Guardar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="container1">
+
+            <!--Botones Calculadora y Agregar Teléfono-->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalDatosPersonales" data-bs-whatever="@mdo">Agregar Usuario</button>
+            </div>
+
+          </div> 
+        </div>
+    </body>
+</html>
